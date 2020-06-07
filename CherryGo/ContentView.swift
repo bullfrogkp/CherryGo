@@ -28,6 +28,14 @@ struct ContentView: View {
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .offset(x: self.showMenu ? geometry.size.width/2 : 0)
                         .disabled(self.showMenu ? true : false)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            if self.showMenu == true {
+                                withAnimation {
+                                    self.showMenu = false
+                                }
+                            }
+                        }
                     
                     MenuView()
                         .frame(width: geometry.size.width/2)
