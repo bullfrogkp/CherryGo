@@ -29,10 +29,9 @@ struct ContentView: View {
                         .offset(x: self.showMenu ? geometry.size.width/2 : 0)
                         .disabled(self.showMenu ? true : false)
                     
-                   
-                        MenuView()
-                            .frame(width: geometry.size.width/2)
-                            .offset(x: self.showMenu ? 0:  -geometry.size.width/2 )
+                    MenuView()
+                        .frame(width: geometry.size.width/2)
+                        .offset(x: self.showMenu ? 0:  -geometry.size.width/2 )
                     
                 }
                 .gesture(drag)
