@@ -18,6 +18,7 @@
 		3E1E075A248C34EA00076A4B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0759248C34EA00076A4B /* MenuView.swift */; };
 		3EA42722248E9CE80090733E /* ShippingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42721248E9CE80090733E /* ShippingRow.swift */; };
 		3EA42725248E9E210090733E /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42724248E9E210090733E /* Shipping.swift */; };
+		3EA42727248EA42D0090733E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42726248EA42D0090733E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3E1E0759248C34EA00076A4B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		3EA42721248E9CE80090733E /* ShippingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingRow.swift; sourceTree = "<group>"; };
 		3EA42724248E9E210090733E /* Shipping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
+		3EA42726248EA42D0090733E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA42724248E9E210090733E /* Shipping.swift */,
+				3EA42726248EA42D0090733E /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				3EA42725248E9E210090733E /* Shipping.swift in Sources */,
 				3E1E074A248C310D00076A4B /* ContentView.swift in Sources */,
 				3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */,
+				3EA42727248EA42D0090733E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
