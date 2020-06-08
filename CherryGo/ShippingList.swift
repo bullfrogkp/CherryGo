@@ -10,9 +10,13 @@ import SwiftUI
 
 struct ShippingList: View {
     var body: some View {
-        List {
-            ShippingRow(shipping: shippingData[0])
-            ShippingRow(shipping: shippingData[1])
+        NavigationView {
+            List(shippingData) { shipping in
+                NavigationLink(destination: ShippingDetail(shipping: shipping)) {
+                    ShippingRow(shipping: shipping)
+                }
+            }
+            .navigationBarTitle(Text("货单"))
         }
     }
 }

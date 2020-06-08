@@ -82,6 +82,7 @@
 				3E07E122248DF43000764659 /* Resources */,
 				3E1E0742248C310D00076A4B /* AppDelegate.swift */,
 				3EA42721248E9CE80090733E /* ShippingRow.swift */,
+				3EA42728248EA52C0090733E /* ShippingList.swift */,
 				3E1E0744248C310D00076A4B /* SceneDelegate.swift */,
 				3E1E0749248C310D00076A4B /* ContentView.swift */,
 				3E1E0759248C34EA00076A4B /* MenuView.swift */,
@@ -90,7 +91,6 @@
 				3E1E0753248C310E00076A4B /* Info.plist */,
 				3E1E0746248C310D00076A4B /* CherryGo.xcdatamodeld */,
 				3E1E074D248C310E00076A4B /* Preview Content */,
-				3EA42728248EA52C0090733E /* ShippingList.swift */,
 			);
 			path = CherryGo;
 			sourceTree = "<group>";
