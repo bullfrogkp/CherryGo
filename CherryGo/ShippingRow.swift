@@ -12,7 +12,12 @@ struct ShippingRow: View {
     var shipping: Shipping
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(shipping.shippingDate)
+            Spacer()
+            Text(shipping.city)
+        }
+    .padding()
     }
 }
 

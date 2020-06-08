@@ -19,6 +19,7 @@
 		3EA42722248E9CE80090733E /* ShippingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42721248E9CE80090733E /* ShippingRow.swift */; };
 		3EA42725248E9E210090733E /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42724248E9E210090733E /* Shipping.swift */; };
 		3EA42727248EA42D0090733E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42726248EA42D0090733E /* Data.swift */; };
+		3EA42729248EA52C0090733E /* ShippingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42728248EA52C0090733E /* ShippingList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3EA42721248E9CE80090733E /* ShippingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingRow.swift; sourceTree = "<group>"; };
 		3EA42724248E9E210090733E /* Shipping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
 		3EA42726248EA42D0090733E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3EA42728248EA52C0090733E /* ShippingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				3E1E0753248C310E00076A4B /* Info.plist */,
 				3E1E0746248C310D00076A4B /* CherryGo.xcdatamodeld */,
 				3E1E074D248C310E00076A4B /* Preview Content */,
+				3EA42728248EA52C0090733E /* ShippingList.swift */,
 			);
 			path = CherryGo;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				3E1E0743248C310D00076A4B /* AppDelegate.swift in Sources */,
 				3E1E0745248C310D00076A4B /* SceneDelegate.swift in Sources */,
 				3EA42725248E9E210090733E /* Shipping.swift in Sources */,
+				3EA42729248EA52C0090733E /* ShippingList.swift in Sources */,
 				3E1E074A248C310D00076A4B /* ContentView.swift in Sources */,
 				3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */,
 				3EA42727248EA42D0090733E /* Data.swift in Sources */,
