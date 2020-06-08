@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E07E124248DF46200764659 /* customerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E123248DF46200764659 /* customerData.json */; };
 		3E1E0743248C310D00076A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0742248C310D00076A4B /* AppDelegate.swift */; };
 		3E1E0745248C310D00076A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0744248C310D00076A4B /* SceneDelegate.swift */; };
 		3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0746248C310D00076A4B /* CherryGo.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E07E123248DF46200764659 /* customerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customerData.json; sourceTree = "<group>"; };
 		3E1E073F248C310D00076A4B /* CherryGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CherryGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1E0742248C310D00076A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E1E0744248C310D00076A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E07E122248DF43000764659 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E07E123248DF46200764659 /* customerData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3E1E0736248C310D00076A4B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		3E1E0741248C310D00076A4B /* CherryGo */ = {
 			isa = PBXGroup;
 			children = (
+				3E07E122248DF43000764659 /* Resources */,
 				3E1E0742248C310D00076A4B /* AppDelegate.swift */,
 				3E1E0744248C310D00076A4B /* SceneDelegate.swift */,
 				3E1E0749248C310D00076A4B /* ContentView.swift */,
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1E0752248C310E00076A4B /* LaunchScreen.storyboard in Resources */,
+				3E07E124248DF46200764659 /* customerData.json in Resources */,
 				3E1E074F248C310E00076A4B /* Preview Assets.xcassets in Resources */,
 				3E1E074C248C310E00076A4B /* Assets.xcassets in Resources */,
 			);
