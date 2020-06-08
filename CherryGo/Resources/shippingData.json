@@ -13,9 +13,7 @@
         "createdUser": "Admin",
         "updatedDatetime": "2020年12月12日 11:30:02",
         "updatedUser": "Pank",
-        "shippingType": {
-            "name": "人肉"
-        },
+        "shippingType": "人肉",
         "customers": ["王乐", "赵亮", "李翰林"],
         "images": ["test1", "test2", "test3"],
         "items": ["item1", "item2", "item3"]
@@ -34,9 +32,7 @@
         "createdUser": "Admin",
         "updatedDatetime": "2020年11月12日 11:30:02",
         "updatedUser": "Pank",
-        "shippingType": {
-            "name": "快递"
-        },
+        "shippingType": "快递",
         "customers": ["刘晓", "邱硕"],
         "images": ["test4", "test5", "test6"],
         "items": ["item4", "item5", "item6"]

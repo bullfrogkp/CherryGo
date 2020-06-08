@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E07E124248DF46200764659 /* customerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E123248DF46200764659 /* customerData.json */; };
+		3E07E124248DF46200764659 /* shippingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E123248DF46200764659 /* shippingData.json */; };
 		3E1E0743248C310D00076A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0742248C310D00076A4B /* AppDelegate.swift */; };
 		3E1E0745248C310D00076A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0744248C310D00076A4B /* SceneDelegate.swift */; };
 		3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0746248C310D00076A4B /* CherryGo.xcdatamodeld */; };
@@ -16,10 +16,12 @@
 		3E1E074F248C310E00076A4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1E074E248C310E00076A4B /* Preview Assets.xcassets */; };
 		3E1E0752248C310E00076A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1E0750248C310E00076A4B /* LaunchScreen.storyboard */; };
 		3E1E075A248C34EA00076A4B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0759248C34EA00076A4B /* MenuView.swift */; };
+		3EA42722248E9CE80090733E /* ShippingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42721248E9CE80090733E /* ShippingRow.swift */; };
+		3EA42725248E9E210090733E /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42724248E9E210090733E /* Shipping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E07E123248DF46200764659 /* customerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customerData.json; sourceTree = "<group>"; };
+		3E07E123248DF46200764659 /* shippingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shippingData.json; sourceTree = "<group>"; };
 		3E1E073F248C310D00076A4B /* CherryGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CherryGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1E0742248C310D00076A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E1E0744248C310D00076A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		3E1E0751248C310E00076A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E1E0753248C310E00076A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E1E0759248C34EA00076A4B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		3EA42721248E9CE80090733E /* ShippingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingRow.swift; sourceTree = "<group>"; };
+		3EA42724248E9E210090733E /* Shipping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,7 @@
 		3E07E122248DF43000764659 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3E07E123248DF46200764659 /* customerData.json */,
+				3E07E123248DF46200764659 /* shippingData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -70,8 +74,10 @@
 		3E1E0741248C310D00076A4B /* CherryGo */ = {
 			isa = PBXGroup;
 			children = (
+				3EA42723248E9DB90090733E /* Models */,
 				3E07E122248DF43000764659 /* Resources */,
 				3E1E0742248C310D00076A4B /* AppDelegate.swift */,
+				3EA42721248E9CE80090733E /* ShippingRow.swift */,
 				3E1E0744248C310D00076A4B /* SceneDelegate.swift */,
 				3E1E0749248C310D00076A4B /* ContentView.swift */,
 				3E1E0759248C34EA00076A4B /* MenuView.swift */,
@@ -90,6 +96,14 @@
 				3E1E074E248C310E00076A4B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EA42723248E9DB90090733E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EA42724248E9E210090733E /* Shipping.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1E0752248C310E00076A4B /* LaunchScreen.storyboard in Resources */,
-				3E07E124248DF46200764659 /* customerData.json in Resources */,
+				3E07E124248DF46200764659 /* shippingData.json in Resources */,
 				3E1E074F248C310E00076A4B /* Preview Assets.xcassets in Resources */,
 				3E1E074C248C310E00076A4B /* Assets.xcassets in Resources */,
 			);
@@ -164,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA42722248E9CE80090733E /* ShippingRow.swift in Sources */,
 				3E1E075A248C34EA00076A4B /* MenuView.swift in Sources */,
 				3E1E0743248C310D00076A4B /* AppDelegate.swift in Sources */,
 				3E1E0745248C310D00076A4B /* SceneDelegate.swift in Sources */,
+				3EA42725248E9E210090733E /* Shipping.swift in Sources */,
 				3E1E074A248C310D00076A4B /* ContentView.swift in Sources */,
 				3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */,
 			);
