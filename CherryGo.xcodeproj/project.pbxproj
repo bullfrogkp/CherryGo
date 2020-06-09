@@ -22,6 +22,8 @@
 		3EA42729248EA52C0090733E /* ShippingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42728248EA52C0090733E /* ShippingList.swift */; };
 		3EA4272B248EB6180090733E /* ShippingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4272A248EB6180090733E /* ShippingDetail.swift */; };
 		3EA4272D248F46430090733E /* ShippingCustomerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4272C248F46430090733E /* ShippingCustomerDetail.swift */; };
+		3EA4272F248FFA140090733E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4272E248FFA140090733E /* Customer.swift */; };
+		3EA42731248FFA3E0090733E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42730248FFA3E0090733E /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		3EA42728248EA52C0090733E /* ShippingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingList.swift; sourceTree = "<group>"; };
 		3EA4272A248EB6180090733E /* ShippingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingDetail.swift; sourceTree = "<group>"; };
 		3EA4272C248F46430090733E /* ShippingCustomerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingCustomerDetail.swift; sourceTree = "<group>"; };
+		3EA4272E248FFA140090733E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		3EA42730248FFA3E0090733E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			children = (
 				3EA42724248E9E210090733E /* Shipping.swift */,
 				3EA42726248EA42D0090733E /* Data.swift */,
+				3EA4272E248FFA140090733E /* Customer.swift */,
+				3EA42730248FFA3E0090733E /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,9 +199,11 @@
 				3EA42722248E9CE80090733E /* ShippingRow.swift in Sources */,
 				3E1E075A248C34EA00076A4B /* MenuView.swift in Sources */,
 				3E1E0743248C310D00076A4B /* AppDelegate.swift in Sources */,
+				3EA4272F248FFA140090733E /* Customer.swift in Sources */,
 				3E1E0745248C310D00076A4B /* SceneDelegate.swift in Sources */,
 				3EA42725248E9E210090733E /* Shipping.swift in Sources */,
 				3EA42729248EA52C0090733E /* ShippingList.swift in Sources */,
+				3EA42731248FFA3E0090733E /* Item.swift in Sources */,
 				3EA4272B248EB6180090733E /* ShippingDetail.swift in Sources */,
 				3E1E074A248C310D00076A4B /* ContentView.swift in Sources */,
 				3E1E0748248C310D00076A4B /* CherryGo.xcdatamodeld in Sources */,

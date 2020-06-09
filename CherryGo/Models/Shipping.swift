@@ -23,7 +23,7 @@ struct Shipping: Hashable, Codable, Identifiable {
     var updatedDatetime: String
     var updatedUser: String
     var shippingType: String
-    var customers: [String]
+    var customers: [Customer]
     var images: [String]
-    var items: [String]
+    var items: [Item]
 }

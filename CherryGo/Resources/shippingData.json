@@ -14,9 +14,32 @@
         "updatedDatetime": "2020年12月12日 11:30:02",
         "updatedUser": "Pank",
         "shippingType": "人肉",
-        "customers": ["王乐", "赵亮", "李翰林"],
+        "customers":
+        [{
+          "id": 28,
+          "name": "Sweden"
+        }, {
+          "id": 56,
+          "name": "USA"
+        }, {
+          "id": 89,
+          "name": "England"
+        }],
         "images": ["test1", "test2", "test3"],
-        "items": ["item1", "item2", "item3"]
+        "items":
+        [{
+          "id": 28,
+          "name": "香皂",
+          "quantity": 2
+        }, {
+          "id": 56,
+          "name": "衬衣",
+          "quantity": 1
+        }, {
+          "id": 89,
+          "name": "旅游鞋",
+          "quantity": 3
+        }]
     },
     {
         "id": 1002,
@@ -33,8 +56,31 @@
         "updatedDatetime": "2020年11月12日 11:30:02",
         "updatedUser": "Pank",
         "shippingType": "快递",
-        "customers": ["刘晓", "邱硕"],
-        "images": ["test4", "test5", "test6"],
-        "items": ["item4", "item5", "item6"]
+        "customers":
+        [{
+          "id": 18,
+          "name": "客户1"
+        }, {
+          "id": 16,
+          "name": "客户2"
+        }, {
+          "id": 19,
+          "name": "客户3"
+        }],
+        "images": ["test1", "test2", "test3"],
+        "items":
+        [{
+          "id": 18,
+          "name": "汽车",
+          "quantity": 2
+        }, {
+          "id": 16,
+          "name": "被褥",
+          "quantity": 1
+        }, {
+          "id": 19,
+          "name": "游泳池",
+          "quantity": 3
+        }]
     }
 ]

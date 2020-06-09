@@ -13,41 +13,41 @@ struct ShippingDetail: View {
     
     var body: some View {
         VStack {
-            Group {
-                HStack {
-                    Text("日期：")
+            HStack {
+                Text("日期：")
+                Spacer()
+                Text(shipping.shippingDate)
+                Spacer()
+                Text("城市：")
+                Spacer()
+                Text(shipping.city)
+            }
+            .padding()
+            
+            HStack {
+                if shipping.shippingType == "人肉" {
+                    Text("箱子：")
                     Spacer()
-                    Text(shipping.shippingDate)
+                    Text(String(shipping.luggage))
+                } else {
+                    Text("包裹：")
                     Spacer()
-                    Text("城市：")
-                    Spacer()
-                    Text(shipping.city)
+                    Text(String(shipping.box))
                 }
-                .padding()
-                
-                HStack {
-                    if shipping.shippingType == "人肉" {
-                        Text("箱子：")
-                        Spacer()
-                        Text(String(shipping.luggage))
-                    } else {
-                        Text("包裹：")
-                        Spacer()
-                        Text(String(shipping.box))
-                    }
-                    Spacer()
-                    Text("价格：")
-                    Spacer()
-                    Text(shipping.fee)
-                }
-                .padding()
-                
-                NavigationView {
-                    List {
-                        ForEach(shipping.customers) { customer in
-                            NavigationLink(destination: ShippingCustomerDetail(customer: customer)) {
-                                Text(customer)
-                            }
+                Spacer()
+                Text("价格：")
+                Spacer()
+                Text(shipping.fee)
+            }
+            .padding()
+            
+            Spacer()
+            
+            NavigationView {
+                List {
+                    ForEach(shipping.customers) { customer in
+                        NavigationLink(destination: ShippingCustomerDetail(customer: customer)) {
+                            Text(customer.name)
                         }
                     }
                 }

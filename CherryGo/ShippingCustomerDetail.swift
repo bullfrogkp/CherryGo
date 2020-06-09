@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct ShippingCustomerDetail: View {
-    var customer: String
+    var customer: Customer
     
     var body: some View {
-        Text(customer)
+        Text(customer.name)
     }
 }
 
