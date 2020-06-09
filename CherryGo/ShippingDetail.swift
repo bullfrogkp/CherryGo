@@ -11,6 +11,14 @@ import SwiftUI
 struct ShippingDetail: View {
     var shipping: Shipping
     
+    var rowCount: Int {
+        if(shipping.images.count % 3 == 0) {
+            return (shipping.images.count) / 3
+        } else {
+            return (shipping.images.count) / 3 + 1
+        }
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -48,6 +56,22 @@ struct ShippingDetail: View {
                     ForEach(shipping.customers) { customer in
                         NavigationLink(destination: ShippingCustomerDetail(customer: customer)) {
                             Text(customer.name)
+                        }
+                    }
+                }
+            }
+            
+            Spacer()
+            
+            NavigationView {
+                List() {
+                    ForEach(0..<rowCount) { _ in
+                        HStack {
+                            ForEach(0..<3) { _ in
+                                Image("test1")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
                         }
                     }
                 }
