@@ -12,8 +12,8 @@ struct Shipping: Hashable, Codable, Identifiable {
     var id: Int
     var city: String
     var shippingDate: String
-    var deposit: Decimal
-    var fee: Decimal
+    var deposit: String
+    var fee: String
     var luggage: Int
     var box: Int
     var status: String
