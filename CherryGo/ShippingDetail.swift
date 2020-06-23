@@ -19,6 +19,10 @@ struct ShippingDetail: View {
         }
     }
     
+    var colCount: Int {
+        return shipping.images.count % 3
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -65,14 +69,26 @@ struct ShippingDetail: View {
             
             NavigationView {
                 List() {
-                    ForEach(0..<rowCount) { _ in
-                        HStack {
-                            ForEach(0..<3) { _ in
-                                Image("test1")
-                                    .resizable()
-                                    .scaledToFit()
+                    ForEach(0..<rowCount) { rowNum in
+                        if rowNum == self.rowCount - 1 {
+                            HStack {
+                                ForEach(0..<self.colCount) { _ in
+                                    Image("test1")
+                                        .resizable()
+                                        .scaledToFit()
+                                }
+                            }
+                        } else {
+                            HStack {
+                                ForEach(0..<3) { _ in
+                                    Image("test1")
+                                        .resizable()
+                                        .scaledToFit()
+                                }
                             }
                         }
+                        
+                        
                     }
                 }
             }
