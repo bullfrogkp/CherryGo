@@ -8,20 +8,11 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct ShippingDetail: View {
     var shipping: Shipping
     
-    var rowCount: Int {
-        if(shipping.images.count % 3 == 0) {
-            return (shipping.images.count) / 3
-        } else {
-            return (shipping.images.count) / 3 + 1
-        }
-    }
-    
-    var colCount: Int {
-        return shipping.images.count % 3
-    }
+    var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         VStack {
@@ -67,28 +58,13 @@ struct ShippingDetail: View {
             
             Spacer()
             
-            NavigationView {
-                List() {
-                    ForEach(0..<rowCount) { rowNum in
-                        if rowNum == self.rowCount - 1 {
-                            HStack {
-                                ForEach(0..<self.colCount) { _ in
-                                    Image("test1")
-                                        .resizable()
-                                        .scaledToFit()
-                                }
-                            }
-                        } else {
-                            HStack {
-                                ForEach(0..<3) { _ in
-                                    Image("test1")
-                                        .resizable()
-                                        .scaledToFit()
-                                }
-                            }
-                        }
-                        
-                        
+            ScrollView {
+                LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                    ForEach((0...6), id: \.self) {_ in
+                        Image("test1")
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(10)
                     }
                 }
             }
@@ -98,6 +74,10 @@ struct ShippingDetail: View {
 
 struct ShippingDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ShippingDetail(shipping: shippingData[0])
+        if #available(iOS 14.0, *) {
+            ShippingDetail(shipping: shippingData[0])
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

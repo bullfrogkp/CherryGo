@@ -12,8 +12,12 @@ struct ShippingList: View {
     var body: some View {
         NavigationView {
             List(shippingData) { shipping in
-                NavigationLink(destination: ShippingDetail(shipping: shipping)) {
-                    ShippingRow(shipping: shipping)
+                if #available(iOS 14.0, *) {
+                    NavigationLink(destination: ShippingDetail(shipping: shipping)) {
+                        ShippingRow(shipping: shipping)
+                    }
+                } else {
+                    // Fallback on earlier versions
                 }
             }
             .navigationBarTitle(Text("货单"))
