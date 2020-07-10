@@ -15,38 +15,36 @@ struct ShippingDetail: View {
     var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("日期：")
-                Spacer()
-                Text(shipping.shippingDate)
-                Spacer()
-                Text("城市：")
-                Spacer()
-                Text(shipping.city)
-            }
-            .padding()
-            
-            HStack {
-                if shipping.shippingType == "人肉" {
-                    Text("箱子：")
+            VStack {
+                HStack {
+                    Text("日期：")
                     Spacer()
-                    Text(String(shipping.luggage))
-                } else {
-                    Text("包裹：")
+                    Text(shipping.shippingDate)
                     Spacer()
-                    Text(String(shipping.box))
+                    Text("城市：")
+                    Spacer()
+                    Text(shipping.city)
                 }
-                Spacer()
-                Text("价格：")
-                Spacer()
-                Text(shipping.fee)
-            }
-            .padding()
-            
-            Spacer()
-            
-            NavigationView {
+                .padding()
+                
+                HStack {
+                    if shipping.shippingType == "人肉" {
+                        Text("箱子：")
+                        Spacer()
+                        Text(String(shipping.luggage))
+                    } else {
+                        Text("包裹：")
+                        Spacer()
+                        Text(String(shipping.box))
+                    }
+                    Spacer()
+                    Text("价格：")
+                    Spacer()
+                    Text(shipping.fee)
+                }
+                .padding()
+                
+                
                 List {
                     ForEach(shipping.customers) { customer in
                         NavigationLink(destination: ShippingCustomerDetail(customer: customer)) {
@@ -54,22 +52,28 @@ struct ShippingDetail: View {
                         }
                     }
                 }
-            }
-            
-            Spacer()
-            
-            ScrollView {
-                LazyVGrid(columns: gridItemLayout, spacing: 20) {
-                    ForEach((0...6), id: \.self) {_ in
-                        Image("test1")
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(10)
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
+                
+                ScrollView {
+                    LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                        ForEach(0 ..< shipping.images.count) {count in
+                            NavigationLink(destination: Text("Second View")) {
+                                Image(shipping.images[count])
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(10)
+                                }
+                        }
                     }
                 }
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
             }
         }
-    }
+    
 }
 
 struct ShippingDetail_Previews: PreviewProvider {
